@@ -10,9 +10,9 @@
     <name>E-Commerce :: Spring Cloud MSA Practice</name>
 
     <modules>
+        <module>module-parent</module>
         <module>service-discovery</module>
         <module>user-service</module>
-        <module>commerce-parent</module>
     </modules>
 
     <dependencyManagement>

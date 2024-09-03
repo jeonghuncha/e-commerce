@@ -4,11 +4,9 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>jeonghuncha.practice.msa</groupId>
-        <!--artifactId>e-commerce</artifactId-->
-        <artifactId>commerce-parent</artifactId>
+        <artifactId>module-parent</artifactId>
         <version>${revision}</version>
-        <!--relativePath>../pom.xml</relativePath-->
-        <relativePath>../commerce-parent/pom.xml</relativePath>
+        <relativePath>../module-parent/pom.xml</relativePath>
     </parent>
     <artifactId>user-service</artifactId>
     <version>${revision}</version>
@@ -67,17 +65,6 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-dependencies</artifactId>
-                <version>${spring-cloud.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
 
     <build>
         <plugins>

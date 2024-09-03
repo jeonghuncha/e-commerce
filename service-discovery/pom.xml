@@ -4,11 +4,9 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>jeonghuncha.practice.msa</groupId>
-        <!--artifactId>e-commerce</artifactId-->
-        <artifactId>commerce-parent</artifactId>
+        <artifactId>module-parent</artifactId>
         <version>${revision}</version>
-        <!--relativePath>../pom.xml</relativePath-->
-        <relativePath>../commerce-parent/pom.xml</relativePath>
+        <relativePath>../module-parent/pom.xml</relativePath>
     </parent>
     <artifactId>service-discovery</artifactId>
     <version>${revision}</version>
@@ -29,8 +27,6 @@
         <url/>
     </scm>
     <properties>
-        <!--java.version>21</java.version>
-        <spring-cloud.version>2023.0.3</spring-cloud.version-->
         <start-class>jeonghuncha.practice.msa.discovery.ServiceDiscoveryApplication</start-class>
     </properties>
     <dependencies>
@@ -56,17 +52,6 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-dependencies</artifactId>
-                <version>${spring-cloud.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
 
     <build>
         <plugins>
@@ -74,7 +59,6 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <!--mainClass>jeonghuncha.practice.msa.discovery.ServiceDiscoveryApplication</mainClass-->
                     <excludes>
                         <exclude>
                             <groupId>org.projectlombok</groupId>

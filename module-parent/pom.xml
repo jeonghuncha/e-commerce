@@ -10,9 +10,9 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <artifactId>commerce-parent</artifactId>
+    <artifactId>module-parent</artifactId>
     <packaging>pom</packaging>
-    <name>E-Commerce :: Parent</name>
+    <name>E-Commerce :: Module Parent</name>
 
     <properties>
         <main.basedir>${basedir}/..</main.basedir>
